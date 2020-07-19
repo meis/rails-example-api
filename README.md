@@ -13,3 +13,13 @@
 ```
   rails server
 ```
+
+## API methods
+
+### GET /content
+
+Returns a list of all movies and seasons, showing latest additions first.
+
+#### Params
+
+* type (optional): movie|season to filter only movies or seasons

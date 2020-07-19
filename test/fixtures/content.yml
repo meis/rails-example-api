@@ -1,0 +1,35 @@
+movie1:
+  title: First movie
+  plot: This is the plot of the first movie
+  content_type: :movie
+  created_at: 2010-12-31
+
+movie2:
+  title: Second movie
+  plot: Like the first movie, but worst
+  content_type: :movie
+  created_at: 2014-12-01
+
+movie3:
+  title: Third movie
+  plot: This one does not exist
+  content_type: :movie
+  created_at: 2016-12-15
+
+season1:
+  title: First season
+  plot: You love the characters
+  content_type: :season
+  created_at: 2001-05-01
+
+season2:
+  title: Second season
+  plot: Something weird happened
+  content_type: :season
+  created_at: 2002-05-01
+
+season3:
+  title: Third season
+  plot: Nothing makes sense
+  content_type: :season
+  created_at: 2011-05-01
