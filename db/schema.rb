@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_19_102656) do
+ActiveRecord::Schema.define(version: 2020_07_19_112028) do
 
   create_table "contents", force: :cascade do |t|
     t.integer "content_type", null: false
@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 2020_07_19_102656) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["content_id", "number"], name: "index_episodes_on_content_id_and_number", unique: true
     t.index ["content_id"], name: "index_episodes_on_content_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

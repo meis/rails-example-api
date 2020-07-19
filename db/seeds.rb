@@ -40,3 +40,8 @@ Episode.create([
   { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'The Sign of Three', number: 2, plot: 'Good episode' },
   { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'His Last Vow', number: 3, plot: 'Good episode' },
 ])
+
+User.create([
+  { email: 'user1@example.com' },
+  { email: 'user2@example.com' },
+])
