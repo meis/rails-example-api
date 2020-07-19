@@ -53,6 +53,13 @@ class ListContentTest < ActionDispatch::IntegrationTest
     assert_equal "Third season", items[0]["title"]
     assert_equal "Second season", items[1]["title"]
     assert_equal "First season", items[2]["title"]
+
+    # Include episodes
+    episodes = items[2]["episodes"]
+    assert_equal 3, episodes.size
+    assert_equal "First", episodes[0]["title"]
+    assert_equal "Second", episodes[1]["title"]
+    assert_equal "Third", episodes[2]["title"]
   end
 
 

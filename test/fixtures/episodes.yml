@@ -1,0 +1,35 @@
+s01e01:
+  title: First
+  plot: Plot for first episode
+  number: 1
+  content: season1
+
+s01e03:
+  title: Third
+  plot: Plot for third episode
+  number: 3
+  content: season1
+
+s01e02:
+  title: Second
+  plot: Plot for second episode
+  number: 2
+  content: season1
+
+s02e01:
+  title: First
+  plot: Plot for first episode
+  number: 1
+  content: season2
+
+s02e02:
+  title: Second
+  plot: Plot for second episode
+  number: 2
+  content: season2
+
+s03e01:
+  title: Finale
+  plot: Plot for final episode
+  number: 1
+  content: season3

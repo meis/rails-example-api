@@ -25,3 +25,18 @@ Content.create([
   { content_type: :season, title: 'Sherlock', number: 3, plot: 'Good season', created_at: Date.parse('2014-01-01') },
   { content_type: :season, title: 'Sherlock', number: 4, plot: 'Good season', created_at: Date.parse('2017-01-01') },
 ])
+
+Episode.create([
+  { content_id: Content.find_by(title: 'Sherlock', number: 1).id, title: 'A Study in Pink', number: 1, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 1).id, title: 'The Blind Banker', number: 2, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 1).id, title: 'The Great Game', number: 3, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 2).id, title: 'The Reichenbach Fall', number: 3, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 2).id, title: 'The Hounds of Baskerville', number: 2, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 2).id, title: 'A Scandal in Belgravia', number: 1, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 4).id, title: 'The Six Thatchers', number: 1, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 4).id, title: 'The Lying Detective', number: 2, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 4).id, title: 'The Final Problem', number: 3, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'The Empty Hearse', number: 1, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'The Sign of Three', number: 2, plot: 'Good episode' },
+  { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'His Last Vow', number: 3, plot: 'Good episode' },
+])
