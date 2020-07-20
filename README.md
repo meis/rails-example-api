@@ -26,6 +26,14 @@ Includes purchase options.
 
 * type (optional): movie|season to filter only movies or seasons
 
+### GET /purchase
+
+Returns a list of all the active purchases for a user.
+
+#### Params
+
+* user_id (required): id of the user
+
 ### POST /purchase
 
 Performs a purchase for a content (movie or season) and a quality.
