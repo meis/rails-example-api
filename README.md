@@ -20,6 +20,7 @@
 
 Returns a list of all movies and seasons, showing latest additions first.
 Includes episodes for seasons.
+Includes purchase options.
 
 #### Params
 

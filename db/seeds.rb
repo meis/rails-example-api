@@ -41,6 +41,11 @@ Episode.create([
   { content_id: Content.find_by(title: 'Sherlock', number: 3).id, title: 'His Last Vow', number: 3, plot: 'Good episode' },
 ])
 
+PurchaseOption.create([
+  { content_id: Content.find_by(title: 'The Avengers').id, price: 3.49, quality: :SD },
+  { content_id: Content.find_by(title: 'The Avengers').id, price: 5.49, quality: :HD },
+])
+
 User.create([
   { email: 'user1@example.com' },
   { email: 'user2@example.com' },

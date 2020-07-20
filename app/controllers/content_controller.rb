@@ -1,7 +1,7 @@
 class ContentController < ApplicationController
   def index
     query = Content
-      .eager_load(:episodes)
+      .eager_load(:episodes, :purchase_options)
 
     if params[:type]
       query = query.where(content_type: params[:type])
@@ -20,6 +20,7 @@ class ContentController < ApplicationController
       title: content.title,
       plot: content.plot,
       creationDate: content.created_at,
+      purchaseOptions: content.purchase_options.map{ |po| serialize_purchase_option(po) }
     }
 
     if (content.number)
@@ -41,6 +42,13 @@ class ContentController < ApplicationController
       number: episode.number,
       title: episode.title,
       plot: episode.plot,
+    }
+  end
+
+  def serialize_purchase_option(purchase_option)
+    {
+      price: purchase_option.price,
+      quality: purchase_option.quality,
     }
   end
 end

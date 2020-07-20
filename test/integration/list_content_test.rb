@@ -19,6 +19,11 @@ class ListContentTest < ActionDispatch::IntegrationTest
     assert_equal "First movie", items[3]["title"]
     assert_equal "Second season", items[4]["title"]
     assert_equal "First season", items[5]["title"]
+
+    # Include purchase options
+    assert_equal "SD", items[3]["purchaseOptions"][0]["quality"]
+    assert_equal "SD", items[5]["purchaseOptions"][0]["quality"]
+    assert_equal "HD", items[5]["purchaseOptions"][1]["quality"]
   end
 
   test "return only movies" do
@@ -36,6 +41,9 @@ class ListContentTest < ActionDispatch::IntegrationTest
     assert_equal "Third movie", items[0]["title"]
     assert_equal "Second movie", items[1]["title"]
     assert_equal "First movie", items[2]["title"]
+
+    # Include purchase options
+    assert_equal "SD", items[2]["purchaseOptions"][0]["quality"]
   end
 
   test "return only seasons" do
@@ -60,6 +68,10 @@ class ListContentTest < ActionDispatch::IntegrationTest
     assert_equal "First", episodes[0]["title"]
     assert_equal "Second", episodes[1]["title"]
     assert_equal "Third", episodes[2]["title"]
+
+    # Include purchase options
+    assert_equal "SD", items[2]["purchaseOptions"][0]["quality"]
+    assert_equal "HD", items[2]["purchaseOptions"][1]["quality"]
   end
 
 

@@ -1,0 +1,14 @@
+movie1_sd:
+  price: 1.50
+  quality: :SD
+  content: movie1
+
+season1_sd:
+  price: 9.99
+  quality: :SD
+  content: season1
+
+season1_hd:
+  price: 19.99
+  quality: :HD
+  content: season1
